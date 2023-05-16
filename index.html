@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recuperar usuarios</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Usuarios</h1>
+        <button id="fetchButton" class="btn btn-primary">Leer usuarios</button>
+        <div id="loadingIndicator" class="mt-4 d-none">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+            </div>
+        </div>
+        <div id="usersContainer" class="mt-4"></div>
+</div>
+    <script src="api-fetch.js"></script>
+</body>
+</html>
